@@ -13,7 +13,6 @@ public class App
     public static void main( String[] args )
     {
      try {
-         int x = 1;
          Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
          PreparedStatement perStmt = conn.prepareStatement(QUERY2);
          perStmt.setString(1,"actor_id");
